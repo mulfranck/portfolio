@@ -1,0 +1,207 @@
+/******  GENERAL  ******/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, 
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: calc(100vh - 4rem - 5rem);
+}
+.content .body {
+    display: flex;
+    width: 100%;
+    flex: 0 0 70%;
+    overflow-x: hidden;
+}
+.content .header {
+    flex: 0 0 20%;
+}
+#home,
+#about,
+#services,
+#projects,
+#contacts {
+    width: 100%;
+    flex: 0 0 100%;
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+    background-color: rgb(160, 231, 255);
+}
+
+#next,
+#prev {
+    position: absolute;
+    bottom: 0;
+}
+#next {
+    right: 0;
+}
+#prev {
+    left: 0;
+}
+/********  IMGS  ********/
+#home img {
+    width: 13rem;
+    height: auto;
+    border-radius: 16px;
+}
+#about img {
+    width: 100%;
+    height: auto;
+}
+#services img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+.tools img{
+    width: 2rem;
+    height: auto;
+}
+
+
+/********  LAYING  ********/
+.m {
+    height: 4rem;
+}
+#footer {
+    height: 5rem;
+}
+
+
+/********  HEADER  ********/
+.header {
+    background-color: tomato;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+}
+.header .logo {
+    margin: 1rem auto;
+    text-align: center;
+    padding: 1rem .8rem;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+}
+.logo a {
+    color: floralwhite;
+}
+
+
+/********  NAVBAR  ********/
+.navbar {
+    /* background-color: violet; */
+    margin: auto;
+    text-align: center;
+}
+.navbar .nav-list {
+    list-style: none;
+    margin: 1rem;
+}
+.nav-list li {
+    transition: background-color .7s;
+}
+li a {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: floralwhite;
+}
+li a.active {
+    background-color: #fff;
+    color: #232323;
+  }
+
+/********  HOME  ********/
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .right {
+    width: 20rem;
+    flex: 0 0 20rem;
+    padding: .6rem;
+    margin: 1rem;
+}
+#home .right h2 {
+    font-size: 1.8rem;
+    border-bottom: .1rem solid black;
+}
+.right p {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+/* .right .btn-container {
+    display: flex;
+    justify-content: space-around;
+} */
+.right button {
+    border: none;
+    border-radius: 6px;
+    width: 49%;
+    padding: .8rem 1rem; 
+    /* background-color: blueviolet; */
+}
+.right .btn-container button:first-child {
+    background-color: transparent;
+    outline: .1rem solid black;
+}
+
+/********  ABOUT  ********/
+#about {
+    display: flex;
+}
+#about .literature,
+#about .img {
+    flex: 0 0 48%;
+    justify-self: center;
+    align-self: center;
+}
+
+#about .literature {
+    padding: 3rem;
+}
+
+.literature h2 {
+    font-size: 1.8rem;
+    padding-bottom: .6rem;
+    border-bottom: .1rem solid black;
+    margin-bottom: 1rem;
+}
+
+.literature p {
+    margin: 1.2rem auto;
+}
+/********  SERVICES  ********/
+
+
+
+/********  PROJECTS  ********/
+
+/********  HOVERS  ********/
+.logo a:hover {
+    color: white;
+}
+
+.nav-list li:hover {
+
+    background-color: black;
+}
