@@ -67,9 +67,16 @@ a {
     height: 15rem;
     border-radius: 50%;
 }
-.tools img{
-    width: 2rem;
+#projects .p-img img {
+    width: 20rem;
     height: auto;
+}
+.tools img {
+    width: 2rem;
+    height: 1.6rem;
+    margin-right: .4rem;
+    border-radius: 8px;
+    outline: 1px solid black;
 }
 
 
@@ -143,7 +150,7 @@ li a.active {
     font-size: 1.8rem;
     border-bottom: .1rem solid black;
 }
-.right p {
+ p {
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;
     font-size: 1rem;
@@ -191,10 +198,75 @@ li a.active {
     margin: 1.2rem auto;
 }
 /********  SERVICES  ********/
+#services h2 {
+    text-align: center;
+    margin-top: 4rem;
+}
+.services {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
+.services .s-1,
+.services .s-2,
+.services .s-3 {
+    flex: 0 0 25%;
+    margin: 1.4rem;
+}
+.services h3 {
+    text-align: center;
+    margin: 1rem auto;
+}
 
 
 /********  PROJECTS  ********/
+/* #projects {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+} */
+.p-1,
+.p-2 {
+    display: flex;
+    justify-content: space-evenly;
+    height: 70vh;
+    /* background-color: cadetblue; */
+    align-items: center;
+}
+
+#projects .left {
+    order: 1;
+    flex: 0 0 40%;
+}
+#projects .right {
+    order: 2;
+    flex: 0 0 40%;
+}
+
+.p-des .p-title {
+    font-size: 2rem;
+}
+.p-des p {
+    width: 18rem;
+}
+.tools {
+    display: flex;
+    align-items: center;
+}
+.tools a {
+    background-color: transparent;
+    padding: .4rem 1rem;
+    border-radius: 6px;
+    outline: 1px solid black;
+}
+
+/********  CONTACTS  ********/
+#contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /********  HOVERS  ********/
 .logo a:hover {
@@ -202,6 +274,5 @@ li a.active {
 }
 
 .nav-list li:hover {
-
     background-color: black;
 }
